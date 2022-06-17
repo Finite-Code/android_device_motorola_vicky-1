@@ -10,6 +10,9 @@ KERNEL_PATH := device/motorola/vicky-kernel
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+# Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
