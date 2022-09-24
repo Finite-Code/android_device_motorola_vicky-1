@@ -56,6 +56,14 @@ fi
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
+function blob_fixup {
+    case "$1" in
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+            "${PATCHELF}" --replace-needed "android.hardware.power-V1-ndk_platform.so" "android.hardware.power-V1-ndk.so" "${2}"
+            ;;
+    esac
+}
+
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
