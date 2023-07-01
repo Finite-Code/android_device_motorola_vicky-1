@@ -66,5 +66,8 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6789
 BOARD_HAS_MTK_HARDWARE := true
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
