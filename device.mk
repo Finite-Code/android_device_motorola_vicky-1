@@ -105,6 +105,9 @@ PRODUCT_PACKAGES += \
     init_conninfra.rc \
     ueventd.mt6789.rc \
 
+PRODUCT_PACKAGES += \
+    init.recovery.mt6789.rc
+
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
