@@ -76,7 +76,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1.vendor:64 \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
-    libdrm.vendor
+    libdrm.vendor \
+    libutils-v32
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
