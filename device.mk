@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_2_0.rc \
     init_conninfra.rc \
+    init.target.rc \
     ueventd.mt6789.rc \
 
 PRODUCT_PACKAGES += \
