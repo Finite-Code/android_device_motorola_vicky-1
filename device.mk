@@ -149,6 +149,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayMT6789 \
     FrameworksResOverlayMT6789 \
     WifiResOverlayMT6789
 
