@@ -149,7 +149,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayMT6789
+    FrameworksResOverlayMT6789 \
+    WifiResOverlayMT6789
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
