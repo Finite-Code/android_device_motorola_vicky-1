@@ -148,6 +148,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
 
 # Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayMT6789
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
