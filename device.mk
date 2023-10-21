@@ -152,6 +152,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayMT6789 \
     FrameworksResOverlayMT6789 \
     SettingsOverlayMT6789 \
+    SettingsOverlayMT6789 \
     WifiResOverlayMT6789
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
