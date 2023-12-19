@@ -71,6 +71,9 @@ function blob_fixup {
 	vendor/bin/hw/android.hardware.memtrack-service.mediatek)
             "$PATCHELF" --replace-needed "android.hardware.memtrack-V1-ndk_platform.so" "android.hardware.memtrack-V1-ndk.so" "$2"
             ;;
+	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
+            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
+            ;;
     esac
 }
 
