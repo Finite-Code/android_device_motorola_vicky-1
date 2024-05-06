@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/motorola/vicky
+KERNEL_PATH := device/motorola/vicky-kernel
 
 # Architecture
 TARGET_ARCH := arm64
@@ -42,6 +43,21 @@ BOARD_MKBOOTIMG_ARGS += \
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
+# Kernel
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := device/motorola/vicky-kernel/kernel-headers
+
+LOCAL_KERNEL := $(KERNEL_PATH)/$(BOARD_KERNEL_IMAGE_NAME)
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)
+BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtb.img
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := vicky
 TARGET_NO_BOOTLOADER := true
@@ -51,4 +67,4 @@ TARGET_BOARD_PLATFORM := mt6789
 BOARD_HAS_MTK_HARDWARE := true
 
 # Inherit the proprietary files
-include vendor/xiaomi/vicky/BoardConfigVendor.mk
+include vendor/motorola/vicky/BoardConfigVendor.mk
