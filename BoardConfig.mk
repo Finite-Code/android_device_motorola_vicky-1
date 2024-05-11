@@ -75,6 +75,9 @@ BOARD_HAS_MTK_HARDWARE := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6789
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
