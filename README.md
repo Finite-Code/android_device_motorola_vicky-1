@@ -1,6 +1,6 @@
 <h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?color=%2340A597&size=30&width=800&lines=Device+Tree+for+Moto G72+(vicky);Some+information+about+the+device+below!">
+ <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?color=%2340A597&size=30&width=800&lines=Device+Tree+for+Moto+G72++(vicky);Some+information+about+the+device+below!;You+can+continue+reading+below,+OK?">
   </a>
 </h1>
 
