@@ -18,7 +18,7 @@ PRODUCT_NAME := lineage_vicky
 PRODUCT_DEVICE := vicky
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := Moto G54 5G
+PRODUCT_MODEL := Moto G72
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
@@ -27,3 +27,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := motorola/vicky_g_sys/vicky:13/T2SVS33M.68-21-6-3/e8924:user/release-keys
 
+# Time
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
